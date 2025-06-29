@@ -5,7 +5,7 @@
 
 %Developed by Daniele Porello with Roberta Ferrario, Emanuele Bottazzi, Ciro de Florio, Mattia Fumagalli
 
-%The theory uses DOLCEBasic, a simplified version of DOLCE.
+%The theory uses DOLCESimple, a simplified version of DOLCE.
 %For DOLCEbasic, see https://github.com/appliedontolab/DOLCE.
 %We add the theory of observations, inferences, and biases.
 %The theory is proved consistent using mace4.
