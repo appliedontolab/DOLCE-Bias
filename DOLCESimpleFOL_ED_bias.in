@@ -5,7 +5,7 @@
 
 %Developed by Daniele Porello with Roberta Ferrario, Emanuele Bottazzi, Ciro de Florio, Mattia Fumagalli
 
-%The ontology uses the theory of endurants, an excerpt of DOLCEBasic, a simplified version of DOLCE.
+%The ontology uses the theory of endurants, an excerpt of DOLCESimple, a simplified version of DOLCE.
 %For DOLCESimple, see https://github.com/appliedontolab/DOLCE.
 %We add the theory of observations, inferences, and biases.
 %The restriction to the DOLCE theory of endurants is motivated to obtain populated models of the theory.
