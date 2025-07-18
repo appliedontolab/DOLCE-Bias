@@ -271,13 +271,13 @@ hasAgent(B1,A) & hasObject(B1,O) & hasConcept(B1,C) & hasTime(B1,T)) ->  (B=B1))
 %Kahnemann bias with concepts c1 and c2 and agent i
 
 (all P all T (cf(P,bkic1c2,T) <->
-((pre(P,T) & age(P)=i & exists O1 (cnc(O1)=c1 & tp(O1,sr(P),T)) & cnc(ta(P))=c2 & obj(ta(P))=x1))
+(pre(P,T) & age(P)=i & exists O1 (cnc(O1)=c1 & tp(O1,sr(P),T)) & cnc(ta(P))=c2)
 &
-(all P1 ((age(P1)=i & exists O1 (exists O2 (cnc(O1)=c1 & cnc(O2)=cr & tp(O1,sr(P1),T) & tp(O2,sr(P1),T))) & cnc(ta(P1))=c2))
--> obj(ta(P1))=x1))
+(all P1 all O1 all O2 ((age(P1)=i & tp(O1,sr(P1),T) & tp(O2,sr(P1),T) & cnc(O1)=c1 & cnc(O2)=crn & obj(O1)=obj(O2) & cnc(ta(P1))=c2)
+-> obj(ta(P1))=obj(O1)))
 &
-all P2 ((age(P2)=i & (-(exists O1 (cnc(O1)=c1 & tp(O1,P2,T)) & cnc(ta(P2))=c2n) -> obj(ta(P2))=x1))
-)).
+(all P2 all O1 ((age(P2)=i & tp(O1,sr(P2),T) & cnc(O1)=c1n & cnc(ta(P2))=c2n) -> obj(ta(P2))=obj(O1))
+))).
 
 
 
